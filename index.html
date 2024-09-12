@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styleentrada.css">
+    
+    <script>
+        function redirecionarParaOutraPagina() {
+            window.location.href = "entrada.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="#" method="POST" onsubmit="exibirAlerta(event)">
+            <div class="form-group">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+           
+		<div class="form-group">
+            <button type="submit" onclick="redirecionarParaOutraPagina()">Cadastrar</button>
+		<button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="styleusuario.css">
+    <script>
+        function exibirAlerta(event) {
+            alert("Dados enviados com sucesso!");
+        }
+    </script>
+    <script>
+        function redirecionarParaOutraPagina() {
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Usuário</h2>
+        <form action="#" method="POST" onsubmit="exibirAlerta(event)">
+           
+           
+            <div class="group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirsenha">Confirmar Senha</label>
+                <input type="password" class="form-senha" id="confirsenha" name="confirsenha" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="endereço">Endereço Completo:</label>
+                <input type="text" class="form-senha" endereço" name="endereço" required>
+            </div>
+            <div class="form-num">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+            <div class="form-num">
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg" required>
+            </div>
+            <label>Observações:</label>
+            <textarea cols="40" rows="10"></textarea>
+            <div class="form-group">
+		<button type="button" onclick="redirecionarParaOutraPagina()">Voltar</button>
+                <button type="submit">Cadastrar</button>
+		<button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
